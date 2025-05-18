@@ -29,11 +29,13 @@ if ($conn->connect_error) {
   exit();
 }
 
-$nome=$_POST["nome"];
-$cognome=$_POST["cognome"];
-$email=$_POST["email"];
-$sesso=$_POST["sesso"];
-$pass=$_POST["pass"];
+
+$nome = $_POST["nome"] ?? "";
+$nome=$_POST["nome"] ?? "";
+$cognome=$_POST["cognome"] ?? "";
+$email=$_POST["email"] ?? "";
+$sesso=$_POST["sesso"] ?? "";
+$pass=$_POST["pass"] ?? "";
 
 $email = $pass = "";
 
