@@ -37,11 +37,18 @@ $sesso=$_POST["sesso"];
 $pass=$_POST["pass"];
 $sql = 'INSERT INTO Dati (nome, cognome,email,sesso,pass) VALUES ("' . $nome . '","' . $cognome . '","' . $email . '","' . $sesso .'","' . $pass .'")';
 
+if (isset($_POST["nome"])) {
+    $nome = $_POST["nome"];
+} else {
+    $nome = ""; // Valore predefinito
+}
+
 if ($conn->query($sql) === TRUE) {
 	/*echo"dati registrati con successo";*/
 } else {
     echo "Errore: " . $sql . "<br>" . $conn->error;
 }
+
 
 ?>
 
