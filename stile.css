@@ -1,0 +1,32 @@
+.menu {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column; /* Dispone gli elementi in riga */
+    align-items: start; /* Allinea in alto */
+    background-color: rgb(0, 0, 0);
+
+}
+
+a{
+    color: rgb(0, 255, 234);
+    text-decoration: none;
+}
+
+p{
+    color: rgb(0, 255, 234);
+}
+
+body {
+    margin: 0;
+}
+
+hr{
+    margin: 0;
+    color: rgb(0, 255, 234);
+}
+
+img{
+    margin: 0;
+    image-rendering: optimizeQuality;
+}
+
